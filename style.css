@@ -11,10 +11,14 @@ body {
 }
  nav{
      height: 10vh;
-     background: #e6a4b4;
+     background: rgb(83, 4, 41);     
      border-bottom-right-radius:20%;
      border-bottom-left-radius: 20%;
  }
+
+ nav:hover{
+    background: #e6a4b4;
+}
  
  .navigation-links {
      display: flex;
@@ -35,8 +39,29 @@ body {
      
  }
    .navigation-links li a:hover {
-     color:#f9ecec;
+    animation-name: colorchange;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
  } 
+
+ @keyframes colorchange{
+    0%{
+     color:#f9ecec;        
+    }
+    25%{
+        color:#f1d1d1;
+        
+    }
+    50%{
+        color:#e07fe9;
+    }
+    75%{
+        color:#f1d1d1;
+    }
+    100%{
+     color:#f9ecec;        
+    }
+ }
 
  @media screen and (max-width: 768px) {
 
